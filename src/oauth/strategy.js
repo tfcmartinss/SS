@@ -27,10 +27,10 @@ class CustomOAuth2Strategy extends OAuth2Strategy {
 
 const strategy = new CustomOAuth2Strategy(
     {
-        authorizationURL: 'http://https://duarte-tomas-auth-server.onrender.com:8000/authorize',
-        tokenURL: 'http://https://duarte-tomas-auth-server.onrender.com:8000/token',
-        registerURL: 'http://https://duarte-tomas-auth-server.onrender.com:8000/register',
-        loginURL: 'http://https://duarte-tomas-auth-server.onrender.com:8000/login',
+        authorizationURL: 'http://https://duarte-tomas-auth-server.onrender.com/authorize',
+        tokenURL: 'http://https://duarte-tomas-auth-server.onrender.com/token',
+        registerURL: 'http://https://duarte-tomas-auth-server.onrender.com/register',
+        loginURL: 'http://https://duarte-tomas-auth-server.onrender.com00/login',
         clientID: 'my-client2',
         clientSecret: 'secret2',
         callbackURL: 'http://https://duarte-tomas-auth-server.onrender.com:3000/auth/provider/callback',
