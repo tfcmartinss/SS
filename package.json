@@ -20,6 +20,6 @@
     "nodemon": "^3.1.10",
     "passport": "^0.7.0",
     "passport-oauth2": "^1.8.0",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.0.2"
   }
 }
