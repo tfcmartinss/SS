@@ -27,14 +27,14 @@ passport.deserializeUser((accessToken, done) => {
     done(null, { accessToken });
 });
 
-app.get('/auth/register', (res) => {
+app.get('/auth/register', (req, res) => {
     const registerURL = strategy.getRegisterURL({
         client_id: strategy._oauth2._clientId
     });
     res.redirect(registerURL);
 });
 
-app.get('/auth/login', (res) => {
+app.get('/auth/login', (req, res) => {
     const registerURL = strategy.getLoginURL({
         client_id: strategy._oauth2._clientId
     });
@@ -50,7 +50,7 @@ app.get('/auth/provider/callback',
     })
 );
 
-app.get('/auth/provider/failure', (res) => {
+app.get('/auth/provider/failure', (req, res) => {
     res.send('Failed to authenticate.');
 });
 

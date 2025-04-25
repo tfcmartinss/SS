@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import { db } from "../config/db.js";
 import jwt from "jsonwebtoken";
-
+const JWT_SECRET = process.env.JWT_SECRET || "default-secret";
 const register = async (req, res) => {
     const { username, password } = req.body;
     try {
