@@ -112,7 +112,7 @@ const token = (req, res) => {
             const payload = {
                 sub: "123456", // ou qualquer identificador de utilizador
                 username: "oauth-user", // opcional, para identificação
-                iss: 'http://localhost:8000',
+                iss: 'https://auth-server-dr8r.onrender.com',
             };
 
             const accessToken = jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
