@@ -112,7 +112,7 @@ const token = (req, res) => {
             const payload = {
                 sub: "123456", // ou qualquer identificador de utilizador
                 username: "oauth-user", // opcional, para identificação
-                iss: 'http://localhost:8000',
+                iss: 'http://https://duarte-tomas-auth-server.onrender.com:8000',
             };
 
             const accessToken = jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
